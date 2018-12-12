@@ -31,5 +31,6 @@ async def on_ready():
     print(client.user.id)
     print('------')
 
+#connexion de mon bot
 client.run(BABYTOKEN)
 

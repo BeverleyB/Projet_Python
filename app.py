@@ -31,6 +31,6 @@ async def on_ready():
     print(client.user.id)
     print('------')
 
-#connexion de mon bot
+#connexion de mon bot sur discord
 client.run(BABYTOKEN)
 

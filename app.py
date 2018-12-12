@@ -3,6 +3,7 @@
 import discord
 from config import BABYTOKEN
 
+#hello maggle
 client = discord.Client()
 
 @client.event

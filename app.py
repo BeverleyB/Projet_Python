@@ -19,6 +19,10 @@ async def on_message(message):
         msg = 'Yo ma grosse {0.author.mention}'.format(message)
         await client.send_message(message.channel, msg)
 
+    if message.content.startswith('!wesh'):
+        msg = 'Ayo fraté {0.author.mention}'.format(message)
+        await client.send_message(message.channel, msg)
+
 @client.event
 async def on_ready():
     print('Logged in as')

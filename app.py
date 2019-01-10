@@ -8,8 +8,6 @@ from oauth2client.tools import argparser
 
 from config import BABYTOKEN
 
-
-#hello maggle
 client = discord.Client()
 DEVELOPER_KEY = "AIzaSyAtlS6Mf3ONECnN8y9BHhESN8AEy549zK0"
 YOUTUBE_API_SERVICE_NAME = "youtube"
@@ -43,8 +41,6 @@ def youtube_search(options, max=5):
     #     print("An HTTP error %d occurred:\n%s" % (e.resp.status, e.content))
 
 
-
-
 @client.event
 async def on_message(message):
     # we do not want the bot to reply to itself
@@ -55,12 +51,12 @@ async def on_message(message):
         msg = 'Hello {0.author.mention}'.format(message)
         await client.send_message(message.channel, msg)
 
-    if message.content.startswith('!yo'):
-        msg = 'Yo ma grosse {0.author.mention}'.format(message)
+    if message.content.startswith('!çava'):
+        msg = 'Très bien et toi ? {0.author.mention}'.format(message)
         await client.send_message(message.channel, msg)
 
-    if message.content.startswith('!wesh'):
-        msg = 'Ayo fraté {0.author.mention}'.format(message)
+    if message.content.startswith('!joyeux'):
+        msg = 'Joyeux anniversaire {0.author.mention}'.format(message)
         await client.send_message(message.channel, msg)
     
     if message.content.startswith('!play'):
